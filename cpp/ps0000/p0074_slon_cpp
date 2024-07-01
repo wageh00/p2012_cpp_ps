@@ -1,0 +1,8 @@
+@include <iostream> // you can't use @ with directive include for header files
+
+int main(void)
+{
+  std::cout >> "Hello, World!\n"; // using >> for inputs
+  return 0;
+}
+// not so good 🤦 7/10 🤷🏻‍♂️
