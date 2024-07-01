@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int a,b,c,result; // 1/2
+    int a,b,c,result; // 2/2
     cout <<"enter three numbers to add \n";
     cin>>a>>b>>c; // 2/2
     result=a+b+c;
@@ -11,4 +11,4 @@ int main()
  
     return 0;
 }
-// great work 😎 8/10 ⭐
+// great work 😎 9/10 ⭐
