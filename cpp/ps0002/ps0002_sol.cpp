@@ -1,26 +1,26 @@
 #include <iostream>
-
 int main()
 {
     // عدد سكان عمارة
-    unsigned int people = 50;
+    unsigned short people = 50; // 0.5/0.75
     // عدد بدائل ادوية
-    unsigned int alternative = 4;
+    unsigned short alternative = 4; // 0.5/0.75
     // عدد افراد فريق برمجة
-    unsigned int team_members = 20;
+    unsigned short team_members = 20; // 0.5/0.75
     // سعر مخبوزات
-    float price = 10.75f;
+    float price = 10.75f; // 1/1
     // الحرف الأول من اسم شخص
-    char letter = 'M';
+    char letter = 'M'; // 0.75/0.75
     // عدد المواليد في دولة تعدادها كبير
-    long births = 3000000000;
+    unsigned int births = 3000000000; // 0.5/0.75
     // ناتج اكثر دقة لقسمة رقم علي 7
-    long double divison = 3.14285714286l;
+    long double divison = 3.14285714286l;  // 0.75/0.75
     // فاتورة الكهربا
-    float bill = 320.5;
+    float bill = 320.5f; // 0.75/1
     // عمر شخص بالثانية
-    long age_seconds = 99532800;
-
+    unsigned int age_seconds = 99532800; // 0.5/0.75
+    // total 5.75/7.25
 
     return 0;
 }
+// great work 😎 8.5/10 ⭐
