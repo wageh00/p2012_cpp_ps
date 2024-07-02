@@ -1,8 +1,9 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream> // 2/2
+#include <conio.h>
 using namespace std;
-int main()
+int main() // 1/1
 {
-	cout << "hello ,world! ";
-	_getch();
+	cout << "Hello, World!\n"; // 3/4
+	_getch(); // 1/1
 }
+// great work 😎 9/10 ⭐
