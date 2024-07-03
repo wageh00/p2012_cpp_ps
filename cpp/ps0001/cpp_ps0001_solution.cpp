@@ -1,10 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-	int x=155, y=940, e=168, z;
-	z = x + y + e;
-	cout << "the solution is :\n" << z;
-	return 0;
+	// prompting user for 3 number to add 0/2
+	unsigned num1, num2, num3, sum;
+	cin >> num1 >> num2 >> num3;
 
+	// outputting the result of the summation problems 3/3
+	sum = num1 + num2 + num3;
+	cout << "the solution is :\n" << sum;
+
+	return 0;
 }
+// good work 👍 7/10
