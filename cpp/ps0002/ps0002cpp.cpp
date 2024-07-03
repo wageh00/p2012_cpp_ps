@@ -1,27 +1,18 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <iostream>
 
 using namespace std;
 int main()
 {
-   // int,short,double,unsigned,float,char;
-    
-short medication_alternatives=4;
-short residents_architecture=14;
-short group_team=12;
-float price_baked_goods=7.5;
-char first_letter ='A';
-double number_births=1430670000;
-float 5_divide_by7=0.7142;
-float electricity_bill=533.5;
-unsigned age_people_sec=90*365.25*24*60*60;
-
-    return 0;
+   unsigned short medication_alternatives = 4; // 0.75/0.75
+   unsigned short residents_architecture = 14; // 0.75/0.75
+   unsigned short group_team = 12; // 0.75/0.75
+   float price_baked_goods = 7.5; // 0.75/0.75
+   char first_letter = 'A'; // 0.75/0.75
+   unsigned int number_births = 1430670000; // 0.75/0.75
+   long double divission = 0.7142; // 0.25/0.75
+   long electricity_bill = 533.5; // 0.5/0.75
+   unsigned age_people_sec = 12345664; // 0.5/0.75
+   // total 5.75/6.75
+   return 0;
 }
+// good work 👍 7/10
