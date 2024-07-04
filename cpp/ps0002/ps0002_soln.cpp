@@ -10,7 +10,7 @@ int main()
 	long double seven_Division_3 = 2.3333333; // 0.75/0.75
 	long electricity_bill = 140826; // 0.5/0.75
 	unsigned int age_in_sec = 2000000000; // 0.25/0.75
-  // total 5.5/6.75
-  return 0;
+  	// total 5.5/6.75
+  	return 0;
 }
-// good work 👍 7.5/10
+// good work 👍 7/10
