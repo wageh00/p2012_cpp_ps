@@ -9,23 +9,23 @@ int main(){
 	cin >> number2;
 	cout << "enter the operator + - % * / \n";
 	cin >> x;
-	
-	if (x == '+')
-		
-	cout << number1 + number2;
-	if (x == '-')
 
-	cout << number1 - number2;
-	if (x == '%')
+	if (x == '+')
+
+		cout << number1 + number2;
+	else if (x == '-')
+		cout << number1 - number2;
+	else if (x == '%')
 
 		cout << number1 % number2;
-	
-	if (x == '*')
 
-		cout << number1 * number2; 
-	if (x == '/')
+	else if (x == '*')
+
+		cout << number1 * number2;
+	else if (x == '/')
 
 		cout << number1 / number2;
-
+	else
+		cout << "Invalid character for operator \n";
 	_getch();
 }
