@@ -12,7 +12,7 @@ int main()
 	if ((126 > number) && (number > 32))
 		cout << "The character for " << number << " is " << ch << endl;
 	else 
-		cout << "Invalid character/s or zero value!";
+		cout << "Invalid character/s or zero value!" <<endl;
 	
 	return 0;
 }
