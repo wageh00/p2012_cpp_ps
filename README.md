@@ -2,7 +2,9 @@
 you want to solve problems in c++, start here!
 
 ## Problems Links
-- [problem 0](https://github.com/do412/ps/tree/main/cpp/ps0000)
-- [problem 1](https://github.com/do412/ps/tree/main/cpp/ps0001)
-- [problem 2](https://github.com/do412/ps/tree/main/cpp/ps0002)
-
+- [problem 0](./cpp/ps0000)
+- [problem 1](./cpp/ps0001)
+- [problem 2](./cpp/ps0002)
+- [problem 3](./cpp/ps0003)
+- [problem 4](./cpp/ps0004)
+- [problem 5](./cpp/ps0005)
