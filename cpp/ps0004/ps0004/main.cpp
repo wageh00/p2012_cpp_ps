@@ -6,7 +6,7 @@ int check_number(float n1);
 
 int main()
 {
-   // prompting user for number 1/1.5
+   // prompting user for number 1.5/1.5
    float x;
    cout<<"Enter a number from 32 to 126:\n";
    cin>>x;
@@ -43,4 +43,4 @@ int check_number(float n1){
  else
   return 0;
 }
-// great work 😎 8/10 ⭐
+// great work 😎 8.5/10 ⭐
