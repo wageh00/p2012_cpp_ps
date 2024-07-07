@@ -6,17 +6,17 @@ int check_number(float n1,float n2);
 
 int main()
 {
-    // prompting user for number 1.5/1.5
+    // prompting user for 2 operands and an operator 2/2
     float num1,num2;
-    char  ch;
+    char ch;
     cout<<"Enter the two operands:\n";
     cin>>x>>y;
     
     cout<<"Enter the  operator + - * / % : \n";
     cin>>ch;
 
-    // checking invalidaty of user's input 4/4
-	   // printing the number and the opposite printable character 2/2
+    // checking user inputs and processing 4/4
+    // printing the result if all data is valid 1/1
     switch(ch)
     {
          case '+':
@@ -39,7 +39,7 @@ int main()
                   cout<<"Infinite number of solutions: (0/0) is undefined quantity.\n";
              else
                   cout<<"Math Error: cannot divide by 0.\n";
-         }
+         } // 1/1
          break;
          
          case '%':
@@ -48,12 +48,12 @@ int main()
                  cout<<"("<<num1<<")%("<<num2<<")="<<(int)num1%(int)num2<<"\n";
              else
                  cout<<"cannot execute modulo operation for floating point numbers.\n";
-         }
+         } // 1/1
          break;
 
          default:
-            cout<<"Invalid character for operator. \n";
-    }
+            cout<<"Invalid character for operator. \n"; // 1/1
+    } // 1/1
  
     return 0;
 }
