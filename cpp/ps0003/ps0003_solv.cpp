@@ -4,23 +4,23 @@ using namespace std;
 
 int main()
 {
-    int x,counter;
+    // prompting user for number 2/2
+    int x, counter;
     cout << "Please enter the number of attempts \n";
-    cin>>counter;
-    for(int i=1;i<=counter;i++)
+    cin >> counter;
+    
+    for(int i = 1; i <= counter; i++)
     {
       cout << "\n Please enter the number\t";
-      cin>>x;
-      if(x!=0)
-      {
-         if(x%2==0)
+      cin >> x;
+        
+     // checking if the number is odd or even 2.5/3
+     if(x % 2 == 0)
          cout << " The number is even \n \n";
-         else
+     else
          cout << " The number is odd \n \n";
-      }
-
-      else
-        cout << " The number is Zero and it is not a even or an odd \n \n";
     }
-}
 
+    return 0;
+}
+// great work 😎 8.5/10 ⭐
