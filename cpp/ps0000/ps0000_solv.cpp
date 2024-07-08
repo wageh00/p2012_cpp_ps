@@ -35,7 +35,7 @@ int main(void)             // correct
        Second error : You are writing the wrong slant direction, it should be from this / to this \ .
        Third error  : You forgot the semicolon that is used to specify that this is the end of the requested command
                       and so that it moves to the next command.
-       4/4
+       3/4
    */
 
 
