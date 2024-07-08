@@ -13,7 +13,7 @@ int main()
         cout << "Enter 3 numbers \n";
         cin >> n1 >> n2 >> n3;
 
-        // outputting the result of the summation process 2/2
+        // outputting the result of the summation process 3/3
         sum = n1 + n2 + n3;
         cout << "----------\n" << sum << "\n";
     }
