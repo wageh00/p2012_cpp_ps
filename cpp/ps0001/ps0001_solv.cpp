@@ -17,5 +17,7 @@ int main()
         sum = n1 + n2 + n3;
         cout << "----------\n" << sum << "\n";
     }
+
+    return 0;
 }
 // great work 😎 9/10 ⭐
