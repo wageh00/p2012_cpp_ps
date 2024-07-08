@@ -12,19 +12,19 @@ int main(){
 
 	if (x == '+')
 
-		cout << number1 + number2;
+		cout << number1<<"+"<< number2<<"="<<number1+number2;
 	else if (x == '-')
-		cout << number1 - number2;
+		cout << number1 << "-" << number2 << "=" << number1 - number2;
 	else if (x == '%')
 
-		cout << number1 % number2;
+		cout << number1 << "%" << number2 << "=" << number1 % number2;
 
 	else if (x == '*')
 
-		cout << number1 * number2;
+		cout << number1 << "*" << number2 << "=" << number1 * number2;
 	else if (x == '/')
 
-		cout << number1 / number2;
+		cout << number1 << "/" << number2 << "=" << number1 / number2;
 	else
 		cout << "Invalid character for operator \n";
 	_getch();
