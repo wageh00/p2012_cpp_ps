@@ -1,7 +1,10 @@
-/* Give examples for variables from real life and consider that:
-    - variables should be named in a way that makes sense
-    - variables should has a suitable data type
-    - variables should be initialized with a suitable value
-    - example:
-        int family_members = 8;
-*/
+int residents =50;
+  int medicine=20;
+  int Team=50;
+  float price=10.5;
+  char first letter=M;
+  double china_populaltion=120000000;
+  double Division_7=0.142
+  float Elec_invoice=25000
+  unsigned int age_by second=6480000
+
