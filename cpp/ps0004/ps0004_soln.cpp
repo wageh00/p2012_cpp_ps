@@ -18,7 +18,7 @@ int main()
     }
     else if ((num >= 32) && (num <= 126))
     {
-        std::cout << "the character for " << num <<< " is " << char(num) << "\n";
+        std::cout << "the character for " << num << " is " << char(num) << "\n";
     }
     else if (num > 126 || num < 32)
     {
