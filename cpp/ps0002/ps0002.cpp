@@ -3,23 +3,17 @@ using namespace std;
 
 int main()
 {
-    int peoples_in_apartment=8;
-    int medicnies = 5;
-    int peoples_in_company=10;
-    float bread =10.5;
-    char first_letter='A';
-    long long china=1204020040504320;
-    double number=10.0;
-    double electricity_bill=123455;
-    long long seconds=1234455983920;
-    cout << peoples_in_apartment << "\n";
-    cout << medicnies << "\n";
-    cout << peoples_in_company << "\n";
-    cout << bread << "\n";
-    cout << first_letter << "\n";
-    cout << china << "\n";
-    cout << number << "\n";
-    cout <<electricity_bill << "\n";
-    cout << seconds << "\n";
-    return 0;   
+    unsigned short peoples_in_apartment = 8; // 0.5/0.75
+    unsigned short medicnies = 5; // 0.75/0.75
+    unsigned short peoples_in_company = 10; // 0.75/0.75
+    float bread = 10.5; // 0.75/0.75
+    char first_letter = 'A'; // 0.75/0.75
+    unsigned int china_births = 1040200; // 0.5/0.75
+    double div = 10.435465676; // 0.75/0.75
+    double electricity_bill = 123455; // 0.75/0.75
+    unsigned int seconds = 1455983920; // 0.75/0.75
+    // total 6.25/6.75
+    
+    return 0;
 }
+// great work 😎 8.5/10 ⭐
