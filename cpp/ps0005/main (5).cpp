@@ -29,6 +29,9 @@ int main()
       break;
      
     case '/' :
+        if(A==B)
+        cout<<"D=1 \n"
+        else    
      cout<<"D="<<A/B<<"\n";
       break;
       
