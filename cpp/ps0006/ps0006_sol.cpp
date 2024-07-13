@@ -5,7 +5,7 @@ using namespace std;
 int counter(int end, int start, int step){
     int sum=start;
     for(int i=start;i<=end;i+=step){
-      sum+=i;
+      cout << i << endl;
     }
     return sum;
 }
@@ -49,9 +49,9 @@ int main()
         cin >> step;
     }
 
-    int sum=counter(end,start,step);
+    counter(end,start,step);
 
-    cout << "The sum of numbers is:" << sum << endl;
+
 
     return 0;
 }
