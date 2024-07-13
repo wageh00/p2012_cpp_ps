@@ -29,9 +29,16 @@ int main()
       break;
      
     case '/' :
-        if(A==B)
-        cout<<"D=1 \n"
-        else    
+    
+      if (A==0 && B==0)
+      cout <<"infinite number of solutions:(0/0) is undefined Quantity \n";
+
+      else if(B==0)
+      cout<<"Math eror: cannot divide by 0 \n";
+      
+      else if (A==0 && B==0)
+      cout <<"infinite number of solutions:(0/0) is undefined Quantity \n";
+     else
      cout<<"D="<<A/B<<"\n";
       break;
       
