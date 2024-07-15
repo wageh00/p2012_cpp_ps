@@ -69,4 +69,4 @@ int main ()
     cout << "Result=\n" << result << endl;
     return 0;
 }
-// good work 👍 6/10
+// good work 👍 7/10
