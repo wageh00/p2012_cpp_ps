@@ -31,4 +31,4 @@ int main ()
 
     return 0;
 }
-// great work 😎 10.5/10 ⭐
+// great work 😎 10/10 ⭐
