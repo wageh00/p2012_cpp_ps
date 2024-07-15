@@ -26,7 +26,7 @@ int main ()
         case '%':
         {
             if (operand2 != 0 && operand1 == (int)operand1 && operand2 == (int)operand2)
-                result = operand1 % operand2;
+                result = (int)operand1 % (int)operand2;
             else
             {
                 cout << "Error\n" << endl;
