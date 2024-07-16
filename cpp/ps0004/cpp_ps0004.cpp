@@ -15,14 +15,24 @@ Write a program that takes a number as input and outputs an equivalent ASCII Cha
       "The character for <PRINT_YOUR_NUMBER_HERE> is <PRINT_THE_EQUIVALENT_CHARACTER_HERE>." and exit the program RETURNING 0.
 */
 
-#include <iostream>
+#include  <iostream> 
+using namespace std;
 
-int main()
-{
-    // prompting user for the number
+int main() {
+    int asciiValue;
 
-    // checking user input
+    cout  <<  "Enter a number from 32 to 126: ";
+    cin  >>  asciiValue;
 
-    // printing the number and the equivalent printable character
+    if(asciiValue < 32 || asciiValue > 126)
+    {
+      cout  <<  "Invalid character/s or zero value!";
+      return 0;
+    }
 
+    char charValue = char(asciiValue); 
+
+    cout  <<  "The character for " << asciiValue << " is "<< charValue << "." <<endl;
+
+    return 0;
 }
