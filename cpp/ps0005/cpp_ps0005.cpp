@@ -19,13 +19,48 @@ Write a program that takes 2 numbers as operands and a character + - * / % as an
 */
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
     // prompting user for the 2 operands and an operator
-
-    // checking user inputs and processing
+      int operand_1, operand_2, result;
+      cout << "Enter the two operands: \n";
+      cin >> operand_1 >> operand_2;
+      char op;
+      cout << "Enter the operator + - * / %: \n";
+      cin>> op;
+      // checking if the operator is valid
+      switch (op)
+      {
+            case '+':
+                  result = operand_1 + operand_2;
+                  break;
+            case '-':
+                  result = operand_1 - operand_2;
+                  break;
+            case '*':
+                  result = operand_1 * operand_2;
+                  break;
+            case '/':
+                  if(operand_2 != 0)
+                        result = operand_1 / operand_2;
+                  else
+                  {
+                        cout << "Can't divide by 0";
+                        return 0;
+                  }
+                  break;  
+            case '%':
+                  result = operand_1 % operand_2;
+                  break;
+            default:
+                  cout << "Invalid operator";
+                  return 0;
+                  break;
+      }
 
     // printing the result if all data is valid
-
+      cout << "(" << operand_1 << ") " << op << " (" << operand_2 << ") " << "= " << result;
+      return 0;
 }
