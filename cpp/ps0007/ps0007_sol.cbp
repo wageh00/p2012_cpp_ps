@@ -29,10 +29,13 @@ double thearea(int shape, double dimensions[]) {
 }
 
 int main() {
+    // prompting user for the shape 1.5/1.5
     int shape;
     double dimensions[2];
     cout << "Enter shape code (1 - Rectangle, 2 - Square, 3 - Circle): ";
     cin >> shape;
+
+    // fill in the dimensions array 3/3
     if (shape == 1) {
         cout << "Enter length and width of the rectangle: ";
         cin >> dimensions[0] >> dimensions[1];
@@ -45,7 +48,8 @@ int main() {
     } else
        cout << " Error" ;
 
-
+    // check the validaty of the choice for the shape 1/1
+    // printing out the area of the shape 1/1
     double area = thearea(shape, dimensions);
 
     if (area != -1) {
@@ -54,3 +58,4 @@ int main() {
 
     return 0;
 }
+// great work 😎 9.5/10 ⭐
