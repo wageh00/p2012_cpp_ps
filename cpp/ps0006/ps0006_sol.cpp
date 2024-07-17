@@ -50,18 +50,6 @@ int main()
     
     
     
-    // running bonus test cases
-    
-    // counter(100, 1); // 1 2 3 4 5 6 ... 95 96 97 98 99 100
-    // cout << "===============" << endl;
-    
-    // counter(100); // Massive number of iterations for our humble counter
-    // cout << "===============" << endl;
-    
-    // counter(200, -44); // Massive number of iterations for our humble counter
-    
-    
-    
     return 0;
 }
 
