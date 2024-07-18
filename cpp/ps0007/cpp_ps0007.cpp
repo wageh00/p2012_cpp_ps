@@ -28,7 +28,7 @@ int main()
     else
         dimensionNum = 2;
 
-    // fill in the dimensions array 3/3
+    // fill in the dimensions array 2.5/3
     float *dimensions = new float[dimensionNum]; 
     cout << "Please Enter The Dimensions:\n";
 
