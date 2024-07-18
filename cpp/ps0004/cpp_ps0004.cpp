@@ -50,4 +50,4 @@ int main() {
 
     return 0;
 }
-// great work 👍 8/10
+// good work 👍 7.5/10
