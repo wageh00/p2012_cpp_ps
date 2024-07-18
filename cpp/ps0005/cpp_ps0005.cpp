@@ -23,7 +23,7 @@ using namespace std;
 
 int main()
 {
-      // prompting user for the 2 operands and an operator 2/2
+      // prompting user for the 2 operands and an operator 1.5/2
       double operand_1, operand_2, result;
       cout << "Enter the two operands: \n";
       cin >> operand_1 >> operand_2;
@@ -70,3 +70,4 @@ int main()
       cout << "(" << operand_1 << ") " << op << " (" << operand_2 << ") " << "= " << result;
       return 0;
 }
+// good work 👍 7.5/10
