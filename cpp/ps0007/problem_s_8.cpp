@@ -22,7 +22,7 @@ float calculateArea(string shape, float params[]) {
         return 2 * (1 + sqrt(2)) * params[0] * params[0];
     } else {
         cout << "Shape not recognized." << endl;
-        return 1;
+        return 0;
     }
 }
 int main() {
@@ -42,7 +42,7 @@ int main() {
         paramCount = 1;
     } else {
         cout << "Shape not recognized." << endl;
-        return 0;
+        return 1;
     }
     
     // fill in the dimensions array 2/3
