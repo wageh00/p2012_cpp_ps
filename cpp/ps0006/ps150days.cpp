@@ -1,13 +1,10 @@
-// ps150days.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+
 using namespace std;
 
-//void counter(int end, int start = 0, int step = 1);
 void counter(int end, int start = 0, int step = 1) {
 
-    if (end > start && step>0 && start % step == 0 && end % step == 0) {
+    if (end > start && step>0 && (end-start)%step==0) { // (end-start)%step==0 not equivalent to start%step==0 && end%step==0
         if (step != 0)
         {
             for (int i = start; i <= end; i += step) {
@@ -25,23 +22,19 @@ void counter(int end, int start = 0, int step = 1) {
     }
 
     else if (end == start) {
-
-
         if (step == 0)
             cout << end << endl;
         else
             cout << "can't start from " << start << " to " << end << " with step " << step<<endl;
-
     }
 
-
-    else if (end<start &&step<0 && start%step==0 && end%step==0){
+    else if (end<start &&step<0 && (start-end)%step==0){ // (start-end)%step==0 not equivalent to start%step==0 && end%step==0
         for (int i = start; i >= end; i += step) {
             cout << i << "\t";
         }
         cout << "\n";
-        //  cout << "start must be less than end";
     }
+
     else if (end < start && step > 0) {
         cout << "can't start from " << start << " to " << end << " with step " << step << endl;
     }
@@ -49,9 +42,6 @@ void counter(int end, int start = 0, int step = 1) {
     else {
         cout << "can't start from " << start << " to " << end << " with step " << step << endl;
     }
-
-
-
 }
 
 int main()
@@ -109,7 +99,6 @@ int main()
     cout << "===============" << endl;
 
     counter(200, -44); // Massive number of iterations for our humble counter
+
+    return 0;
 }
-
-
-
