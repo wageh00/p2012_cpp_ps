@@ -6,12 +6,16 @@ float Area(char shape, float dimension[]);
 
 int main()
 {
+	// prompting user for the shape 1/1.5
 	char shape;
-	cout << "enter the shape \n circle -sqare-rectangle\n";
+	cout << "enter the first letter of the shape name \n c:circle \n s:square \n r:rectangle\n";
 	cin >> shape;
+
+	// check the validaty of the choice for the shape 1/1
+	// fill in the dimensions array 2/3
 	if (shape == 'c')
 	{
-		cout << "enter redious of circle\n";
+		cout << "enter radius of circle\n";
 		cin >> dimention[0];
 	}
 	else if (shape == 's')
@@ -25,9 +29,13 @@ int main()
 		cin >> dimention[0] >> dimention[1];
 	}
 	else
+	{
 		cout << "the program can't be calculated\n";
+		return 1;
+	}
 
-	cout << "the shape is:\n" << Area(shape, dimention);
+	// printing out the area of the shape 1/1
+	cout << "the area of the shape is:\n" << Area(shape, dimention);
 
 	return 0;
 
@@ -51,3 +59,4 @@ float Area(char shape, float dimension[])
 	else
 		return 0.0f;
 }
+// good work 👍 7/10
