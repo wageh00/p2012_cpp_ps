@@ -2,35 +2,45 @@
 
 using namespace std;
 
-int count(int start, int end) {
-  if (start > end) {
-    cout << "Error: Start number cannot be greater than end number." << endl;
-    return 0;
+bool input(int start, int end, int step) {
+  if (step == 0) {
+    cout << "Error: Step cannot be 0." << endl;
+    return false;
   }
-  int count = 0;
-  cout << "Numbers between " << start << " and " << end << " (inclusive):" << endl;
-  for (int i = start; i <= end; ++i) {
+  if ((step > 0 && start > end) || (step < 0 && start < end)) {
+    cout << "Error: Start value cannot reach end value with the given step." << endl;
+    return false;
+  }
+  return true;
+}
+
+
+void counter(int start = 0, int end = 0, int step = 1) {
+  if (!input(start, end, step)) {
+    return;
+  }
+
+  cout << "Counting from " << start << " to " << end << " with step " << step << ":" << endl;
+
+  for (int i = start; (step > 0 && i <= end) || (step < 0 && i >= end); i += step) {
     cout << i << " ";
-    count++;
   }
   cout << endl;
-  return count;
 }
 
 int main() {
-  int start, end;
+  int start, end, step;
 
-  cout << "Enter the starting number: ";
+  cout << "Enter start value (default 0): ";
   cin >> start;
 
-  cout << "Enter the ending number: ";
+  cout << "Enter end value: ";
   cin >> end;
 
-  int e  = count(start, end);
+  cout << "Enter step value (default 1): ";
+  cin >> step;
 
-  if (e > 0) {
-    cout << "Total numbers counted: " << e << endl;
-  }
+  counter(start, end, step);
 
   return 0;
 }
