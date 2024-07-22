@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    // prompting user for number 1.5/1.5
     float x;
     int y;
     char r;
@@ -14,6 +15,8 @@ int main()
     y=x;
     r=x;
 
+    // checking invalidaty of user's input 4/4
+	// printing the number and the opposite printable character 2/2
     if ( x==0 )
     {
         cout << "Invalid character/s or zero value. \n";
