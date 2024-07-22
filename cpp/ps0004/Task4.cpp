@@ -26,7 +26,7 @@ int main()
 
     else if ( y==x )
     {
-        if ( y<0 || y<32 || y>126 )
+        if ( y<32 || y>126 )
         {
             cout << "Invalid: number is out of the range. \n";
         }
@@ -41,3 +41,4 @@ int main()
 
     return 0;
 }
+// great work 😎 9.5/10 ⭐
