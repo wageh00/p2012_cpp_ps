@@ -179,4 +179,4 @@ float area_calc (char shape , float dimensions[])
         }
        return 0;
    }
-// great work 😎 8/10 ⭐
+// great work 😎 8.5/10 ⭐
