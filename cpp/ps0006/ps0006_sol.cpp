@@ -39,7 +39,7 @@ void counter(int end, int start = 0, int step = 1) { // swapped start with end
 }
 
 int main() {
-  // running my valid test cases
+  // running my valid test cases 3/3
     
     counter(5); // 0 1 2 3 4 5
     cout << "===============" << endl;
@@ -55,7 +55,7 @@ int main() {
     
     
     
-    // running invalid test cases, have to give clear error
+    // running invalid test cases, have to give clear error 2/4
     
     counter(100, 10, 0); // Error: can't start from 10 to 100 with step 0
     cout << "===============" << endl;
@@ -96,4 +96,4 @@ int main() {
     
     return 0;
 }
-// good work 👍 7/10
+// good work 👍 6.5/10
