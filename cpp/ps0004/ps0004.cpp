@@ -2,14 +2,16 @@
 using namespace std;
 
 int main() {
-    int ascii_code;
+    float ascii_code;
 
-    // Prompt the user to enter an ASCII code
+    // Prompt the user to enter an ASCII code 1/1.5
     cout << "Enter an ASCII code (between 32 and 126): ";
     cin >> ascii_code;
 
-    // Check if the entered code is within the valid range
-    if (ascii_code >= 32 && ascii_code <= 126) {
+    // Check if the entered code is within the valid range 1/4
+    // print the character 2/2
+    int test = static_cast<int>(ascii_code);
+    if (ascii_code == test && ascii_code >= 32 && ascii_code <= 126) {
         char character = static_cast<char>(ascii_code);
         cout << "The character corresponding to ASCII code " << ascii_code << " is: " << character << endl;
     } else {
@@ -18,3 +20,4 @@ int main() {
 
     return 0;
 }
+// great work 👍 5.5/10
