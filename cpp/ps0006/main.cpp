@@ -11,7 +11,7 @@ int main()
 
   //calling counter function
 
-   counter(8);
+   counter(-8,31,-2);
 return 0;
 }
 
@@ -22,7 +22,25 @@ return 0;
 
 
 void counter (int   end,int   start,int  step) {
-if(end > start&&step >0){
+
+
+
+
+ if(start ==end&&step==0)
+        cout<<start<<endl;
+
+
+else  if(start !=end&&step==0)
+   cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
+
+
+    else if(start==end &&step !=0)
+   cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
+
+  else if(end > start&&step >0){
+         if ((end-start)%step!=0)
+   cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
+  else
   for(;start<=end;start+=step){
     cout <<start <<endl;
   }
@@ -32,7 +50,9 @@ if(end > start&&step >0){
 
 
  else if (end< start && step <0){
-
+   if ((end-start)%step!=0)
+   cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
+   else
  for(;start>=end;start+=step){
     cout <<start <<endl;}
 
@@ -42,7 +62,7 @@ if(end > start&&step >0){
 
 
  else if (start>end &&step >0 ){
-cout <<" error: start number is greater than end number and the step is positive "<<endl;
+  cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
 
 }
 
@@ -50,14 +70,10 @@ cout <<" error: start number is greater than end number and the step is positive
 
 
 else if (start <end &&step <0){
-cout<<" error: start number is smaller  than end number and the step is negative "<<endl;
+cout<<"Error:can't start from  "<<start<<" to "<<end<<" with step "<<step<<endl;
 
 }
+
 }
-
-
-
-
-
 
 
