@@ -18,7 +18,7 @@ int main()
 
   char shape;
 
-  //prompting user for shape.
+  //prompting user for shape. 1/1.5
   cout <<"Choose a shape from this list : \n "<<endl ;
 
   cout <<"1.area of rectangle . "<<endl ;
@@ -36,7 +36,7 @@ int main()
 
   cin>>shape;
   switch(shape)
-  //Prompt the user for dimensions according to the shape.
+  //Prompt the user for dimensions according to the shape. 1/1
   {
 
        case '1' :
@@ -44,10 +44,10 @@ int main()
             cout<<"\nEnter length and width "<<endl;
             cin>>dimensions [0]>>dimensions [1];
 
-            //Verify the validity of the entered data.
+            //Verify the validity of the entered data. 3/3
             if (dimensions [0] >=0 && dimensions [1] >=0)
             {
-                // The output area of the shape .
+                // The output area of the shape . 1/1
                 cout<<"\n area of rectangle is "<<area_calc(shape,dimensions)<<endl;
             }
             else
@@ -179,3 +179,4 @@ float area_calc (char shape , float dimensions[])
         }
        return 0;
    }
+//
