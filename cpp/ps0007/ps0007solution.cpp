@@ -7,12 +7,16 @@ float area (char shape, float dim[]);
 
 int main()
 {
-	char shape;
-	cout <<"\n enter the first letter of the shape you want to calculate area \n r for rectangle \n s for square \n c for circle \n";
+    // prompting user for the shape 1.5/1.5
+    char shape;
+    cout <<"\n enter the first letter of the shape you want to calculate area \n r for rectangle \n s for square \n c for circle \n";
 
-    cin >>shape;
+    cin >> shape;
     float ar = 0;
 
+    // check the validaty of the choice for the shape 1/1
+    // fill in the dimensions array 2/3
+    // printing out the area of the shape 1/1
     switch (shape) {
     case 'r':
     {
@@ -31,7 +35,8 @@ int main()
         break;
     }
     case 's': 
-    {cout << "enter the length:\n";
+    {
+	cout << "enter the length:\n";
         cin >> dim[0];
         if (dim[0] > 0)
         {
@@ -46,7 +51,8 @@ int main()
         break;
     }
     case 'c': 
-    { cout << "enter the radius:\n";
+    {
+	cout << "enter the radius:\n";
         cin >> dim[0];
         if (dim[0] > 0)
         {
@@ -89,3 +95,4 @@ float area(char shape, float dim[])
     }
     return ar; 
 }
+// good work 👍 7/10
