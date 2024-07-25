@@ -5,7 +5,7 @@ void  counter(int end , int start =0 , int step =1 );
 
 int main()
 {
-    // running my valid test cases .
+    // running my valid test cases . 3/3
 
     counter (5);  // 0 1 2 3 4 5
     cout<<"\n------------------------------------- \n";
@@ -20,7 +20,7 @@ int main()
     cout<<"------------------------------------- \n";
 
 
-    // running invalid test case , have to give clear error .
+    // running invalid test case , have to give clear error . 4/4
 
     counter (100,10,0); // Error : can't start from 10 to 100 with step 0 .
     cout<<"\n------------------------------------- \n";
@@ -47,7 +47,7 @@ int main()
     cout<<"\n------------------------------------- \n";
 
 
-    //running bonus test case .
+    //running bonus test case . +0.5
     counter (100,1);  // 1 2 3 ..........98 99 100
     cout<<"\n------------------------------------- \n";
 
@@ -149,3 +149,4 @@ void  counter(int end , int start  , int step )
         }
     }
 }
+// great work 😎 10/10 ⭐
