@@ -3,6 +3,6 @@ using namespace std;
 int main() // 1/1
 {
   cout<< "Hello, World!\n"; // 4/4
-  return 0;
+  return 0; // 1/1
 }
 // great work 😎 10/10 ⭐
