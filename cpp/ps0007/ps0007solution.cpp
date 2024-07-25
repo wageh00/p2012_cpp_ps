@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 using namespace std;
 
 const float PI = 3.141f;
@@ -18,25 +18,46 @@ int main()
     {
         cout << "enter the length and the width:\n";
         cin >> dim[0] >> dim[1];
-
-        ar = area(shape, dim);
-        cout << "the area of the rectangle = " << ar << endl;
+        if (dim[0] > 0 && dim[1] > 0)
+        {
+            ar = area(shape, dim);
+            cout << "the area of the rectangle = " << ar << endl;
+        }
+        else
+        {
+            cout << "Dimensions must be positive" << endl;
+            return 1;
+        }
         break;
     }
     case 's': 
     {cout << "enter the length:\n";
         cin >> dim[0];
-      
-        ar = area(shape, dim);
-        cout << "the area of the square is = " << ar << endl;
+        if (dim[0] > 0)
+        {
+            ar = area(shape, dim);
+            cout << "the area of the square is = " << ar << endl;
+        }
+        else
+        {
+            cout << "Dimensions must be positive" << endl;
+            return 1;
+        }
         break;
     }
     case 'c': 
     { cout << "enter the radius:\n";
         cin >> dim[0];
- 
-        ar = area(shape, dim);
-        cout << "the area of the circle is = " << ar << endl;
+        if (dim[0] > 0)
+        {
+            ar = area(shape, dim);
+            cout << "the area of the circle is = " << ar << endl;
+        }
+        else
+        {
+            cout << "Dimensions must be positive" << endl;
+            return 1;
+        }
         break;
     }
     
@@ -46,8 +67,10 @@ int main()
     }
 	return 0;
 }
+
 float area(char shape, float dim[]) 
-{ float ar =0;
+{
+    float ar =0;
 
     switch (shape) 
     {
@@ -60,7 +83,6 @@ float area(char shape, float dim[])
     case 'c':
         ar = PI * dim[0] * dim[0];
         break;
-   
     default:
         cout << "this shape is not available\n";
         break;
