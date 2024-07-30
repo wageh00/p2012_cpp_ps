@@ -4,7 +4,7 @@ int main() // 1/1
 {
     cout << "Hello, World\n"; // 2/4
     //@ cannot be used instead of # 
-    // cannot be used int main(void)
+    // cannot be used int Main(void)
     //cannot be used iostream.h
     //Not 1 but 0 
     return 0 // 1/1
