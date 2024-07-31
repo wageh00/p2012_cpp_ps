@@ -10,6 +10,7 @@ int main() {
 	cin >> num;
 
 	// checking invalidaty of user's input 4/4
+	// print the character 2/2
 	if (num == 0)
 		cout << "Invalid character/s or Zero value";
 	else if (num != int(num))
@@ -22,4 +23,4 @@ int main() {
 	}
 	return 0;
 }
-// great work 😎 8.5/10 ⭐
+// great work 😎 9/10 ⭐
