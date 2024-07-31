@@ -29,8 +29,10 @@ int main() {
 	{
 		if (num2 == 0)
 			cout << "MOdulus by Zero is invalid";
+		else if (num1 == (int)num1 && num2 == (int)num2)
+			cout << "The modula of the 2 numbers is " << (int)num1 % (int)num2 << endl;
 		else
-			cout << "The modula of the 2 numbers is " << num1 % num2 << endl;
+			cout << "cannot execute modulo operation for floating point numbers.";
 	} // 0.5/1
 	else
 		cout << "Incorrect Operator, Please Enter one of [+,-,*,/,%]" << endl; // 1/1
