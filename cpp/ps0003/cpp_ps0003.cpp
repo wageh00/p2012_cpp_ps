@@ -1,12 +1,23 @@
-/* help your brother check if the number is even or odd
-    - if the number is even, print "Number is even"
-    - if the number is odd, print "Number is odd"
-    
-    - ex:
-      => 909
-      <= Number is odd
+/******************************************************************************
 
-    - another ex:
-      => 20000
-      <= Number is odd
-*/
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int main()
+{
+     int number;
+    cout<<"inter any integer number \n";
+    cin>>number;
+    if (number % 2==0)
+       cout<<"thes number is even \n";
+    else
+       cout<<"thes number is odd \n";
+
+
+    return 0;
+}
