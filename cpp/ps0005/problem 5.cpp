@@ -13,33 +13,33 @@ int main() {
     int result;
     switch(operation) {
         case '+':
-            result = num1 + num2;
-            break;
+        result = num1 + num2;
+        break;
         case '-':
-            result = num1 - num2;
-            break;
+        result = num1 - num2;
+        break;
         case '*':
-            result = num1 * num2;
-            break;
+        result = num1 * num2;
+        break;
         case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-            }else {
-                cout << "Math eror cannot divide by zero \n" ;
-                return 1;
-            }
-            break;
+        if (num2 != 0) {
+        result = num1 / num2;
+        }else {
+        cout << "Math eror cannot divide by zero \n" ;
+        return 1;
+        }
+        break;
         case '%':
-            result = num1 % num2;
-            break;
+        result = num1 % num2;
+        break;
         case '^':
-            result = num1 ^ num2;
-            cout << "invalid character for operator \n";
-               return 1;
-            break;
+        result = num1 ^ num2;
+        cout << "invalid character for operator \n";
+        return 1;
+        break;
         default:
-            cout << "Invalid operation!\n";
-               return 1;
+        cout << "Invalid operation!\n";
+        return 1;
     }
 
     cout << "Result: " << result ;
