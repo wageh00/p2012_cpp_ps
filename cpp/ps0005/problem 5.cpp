@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() { 
-    int num1, num2;
+    float num1, num2;
     char operation;
     cout << "Enter first number:\n";
     cin >> num1;
@@ -10,7 +10,7 @@ int main() {
     cout << "Enter second number:\n";
     cin >> num2;
 
-    int result;
+    double result;
     switch(operation) {
         case '+':
         result = num1 + num2;
@@ -30,10 +30,14 @@ int main() {
         }
         break;
         case '%':
-        result = num1 % num2;
+        if ((num1 == (int)num1) && (num2 == (int)num2)) {
+        result = (int)num1 % (int)num2;
+        }else {
+        cout << "Cannot execute modulo operation on floating numbers\n";
+        return 1;
+        }
         break;
         case '^':
-        result = num1 ^ num2;
         cout << "invalid character for operator \n";
         return 1;
         break;
