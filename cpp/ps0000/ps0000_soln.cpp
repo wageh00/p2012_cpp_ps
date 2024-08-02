@@ -13,6 +13,6 @@ int main() // 1/1
     return 0; // 1/1
     // we write 0 not 1
 }
-// great work 😎 8/10 ⭐
+// great work 😎 9/10 ⭐
 
 // +1 bonus mark
