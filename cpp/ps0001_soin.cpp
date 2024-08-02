@@ -1,4 +1,3 @@
-﻿
 #include <iostream>
 
 using namespace std;
@@ -25,4 +24,4 @@ int main()
 
     return 0;
 }
-// great work 😎 10/10 ⭐
+// great work 😎 9/10 ⭐
