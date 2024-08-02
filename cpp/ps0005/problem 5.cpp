@@ -32,7 +32,7 @@ int main() {
             } else {
                 cout << "Math eror cannot divide by zero \n" ;
                 return 1;
-            }
+            } // 1/1
             break;
         
         case '%':
@@ -41,13 +41,13 @@ int main() {
             } else {
                 cout << "Cannot execute modulo operation on floating numbers\n";
                 return 1;
-            }
+            } // 1/1
             break;
         
         default:
             cout << "Invalid operation!\n";
-            return 1;
-    }
+            return 1; // 1/1
+    } // 1/1
 
     // printing the result if all data is valid 1/1
     cout << "Result: " << result ;
