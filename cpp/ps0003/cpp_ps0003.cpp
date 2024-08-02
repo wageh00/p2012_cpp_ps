@@ -1,23 +1,18 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <iostream>
 using namespace std;
 int main()
 {
+     // prompting user for number 2/2
      int number;
-    cout<<"inter any integer number \n";
-    cin>>number;
-    if (number % 2==0)
-       cout<<"thes number is even \n";
-    else
-       cout<<"thes number is odd \n";
+     cout << "Enter any integer number \n";
+     cin >> number;
 
-
-    return 0;
+     // checking if the number is odd or even 3/3
+     if (number % 2 == 0)
+          cout << "this number is even \n";
+     else
+          cout << "this number is odd \n";
+     
+     return 0;
 }
+// great work 😎 9/10 ⭐
