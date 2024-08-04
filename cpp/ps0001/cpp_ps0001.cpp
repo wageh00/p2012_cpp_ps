@@ -2,7 +2,7 @@
 
 int main() {
     // prompting user for 3 numbers to add 1/2
-    int num1 , num2 , num3 , result;
+    short num1 , num2 , num3 , result;
     std::cout << "Enter number 1" << std::endl;
     std::cin >> num1;
     std::cout << "Enter number 2" << std::endl;
