@@ -2,37 +2,29 @@
 #include <limits>
 #include <cctype>
 #include <string>
-using namespace std;
 
+using namespace std;
 
 string userInputKey();
 void decrypt(string msg, int key);
 
-
 int main(void)
 {
     // prompting user for valid ciphertext and key
-   string inputKey =  userInputKey();
+    string inputKey =  userInputKey();
+    int inputKeyDigits = stoi(inputKey);
 
-   int inputKeyDigits = stoi(inputKey);
+    string cipherText;
+    cout << "\nciphertext: ";
+    getline(cin, cipherText); // no need for cin.ignore for 2 successive string inputs
 
-   string cipherText;
-   cout << "\n ciphertext: ";
-
-   cin.ignore(1,'\n');
-
-   getline(cin, cipherText);
-
-
-  // cin >> cipherText;
-
-    // invoke your decrypt function to return the plaintext
-   decrypt(cipherText, inputKeyDigits);
+    // invoke your decrypt function to return the plaintext 0.5/0.5
+    decrypt(cipherText, inputKeyDigits);
 
     return 0;
 }
 
-
+// ============================== 👇 Decpryption process 3.5/3.5 👇 ==============================
 
 string userInputKey() {
     bool isNotDigit = true;
@@ -41,9 +33,10 @@ string userInputKey() {
 
     while (isNotDigit) {
         cout << "key: ";
-        cin >> input;
+        getline(cin, input); // to avoid problems of cin like spaces
+        int i = 0; // counter to check sign from first character
         for (char ch : input) {
-            if (ch == '-')
+            if ((ch == '-' || ch == '+') && i == 0) // as the first character only
                 continue;
 
             if (isdigit(ch)) {
@@ -53,52 +46,32 @@ string userInputKey() {
                 isNotDigit = true;
                 break;
             }
+            
+            ++i;
         }
-      
-
     }
-
     return input;
 }
 
-
-
-
-
-
-
+// ==================== 👇 checking if the key is valid integer 2/3 👇 ====================
 
 void decrypt(std::string msg, int key)
 {
-    string plainText = "";
+    string plainText = msg; // cannot allocate more memory for string later
 
-    /* implement your function and consider that:
-        - all uppercase letters in ciphertext are uppercase letters in plaintext
-        - all lowercase letters in ciphertext are lowercase letters in plaintext
-        - all digits, special characters, spaces in ciphertext are the same in plaintext
-    */
+    cout << "plaintext:  ";
+    
+    if (abs(key) >= 26) {
+        key %= 26; // no need for loop
+                   // 26 steps give the same point
+    }
+
     if (key == 0) {
-        cout << msg;
+        cout << plainText;
         return;
-    }
+    } // key may be multiple of 26
 
-    else if (abs(key) > 26) {
-
-        while (abs(key) >= 26) {
-            key %= 26;
-        }
-
-       
-
-       
-
-    }
-
-
-   
-
-
-   
+    int i = 0;
     for (char ch : msg) {
 
         if (isalpha(ch)) {
@@ -106,57 +79,20 @@ void decrypt(std::string msg, int key)
             //decrypt then add to plainText
             int t = int(ch);
             t -= key;
-            cout << "t = " << t <<"\n";
-            if ( (islower(ch) && t >= 97 && t <= 122)   || isupper(ch) && t>=65 && t<=90 ){
-                ch = static_cast<char>(t);
-                cout << "ch = " << ch << endl;
-                plainText += ch;
-                cout << "plainText = " << plainText << endl;
-            }
 
-            else if (islower(ch) && t < 97) {
+            if ((islower(ch) && t < 97) || (isupper(ch) && t < 65)) {
                 t += 26;
-                ch = static_cast<char>(t);
-                cout << "ch = " << ch << endl;
-                plainText += ch;
-                cout << "plainText = " << plainText << endl;
             }
-            else if (islower(ch) && t > 122) {
+            else if ((islower(ch) && t > 122) || (isupper(ch) && t > 90)) {
                 t -= 26;
-                ch = static_cast<char>(t);
-                cout << "ch = " << ch << endl;
-                plainText += ch;
-                cout << "plainText = " << plainText << endl;
-            }
-            else if (isupper(ch) && t < 65) {
-                t += 26;
-                ch = static_cast<char>(t);
-                cout << "ch = " << ch << endl;
-                plainText += ch;
-                cout << "plainText = " << plainText << endl;
-            }
-            else if (isupper(ch) && t > 90) {
-                t -= 26;
-                ch = static_cast<char>(t);
-                cout << "ch = " << ch << endl;
-                plainText += ch;
-                cout << "plainText = " << plainText << endl;
             }
             
-          
+            ch = t;
         }
-
-
-        else {
-            plainText += ch;
-            cout << "plainText == " << plainText << endl;
-        }
-
-
+        
+        // the previous lines line of code were repeated, DRY! 
+        plainText[i++] = ch;
     }
 
-    cout << plainText;
-
-  
-
+    cout << plainText; // no need to repeat for every single character
 }
