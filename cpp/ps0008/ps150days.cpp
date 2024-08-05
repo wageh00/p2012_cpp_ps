@@ -15,8 +15,8 @@ int main(void)
     int inputKeyDigits = stoi(inputKey);
 
     string cipherText;
-    cout << "\nciphertext: ";
-    getline(cin, cipherText); // no need for cin.ignore for 2 successive string inputs
+    cout << "\nciphertext: "; // no need for cin.ignore for 2 successive string inputs
+    getline(cin, cipherText); // 1/1
 
     // invoke your decrypt function to return the plaintext 0.5/0.5
     decrypt(cipherText, inputKeyDigits);
@@ -96,3 +96,4 @@ void decrypt(std::string msg, int key)
 
     cout << plainText; // no need to repeat for every single character
 }
+// good work 👍 7.5/10
