@@ -16,13 +16,42 @@ Write a program that takes a number as input and outputs an equivalent ASCII Cha
 */
 
 #include <iostream>
+#include <cmath>
+
 
 int main()
 {
-    // prompting user for the number
+      // prompting user for the number---------------------------------------
+      float inputValue {};
+      std::cout << "Enter a number from 32 to 126 : " << std::endl;
+      std::cin >> inputValue;
 
-    // checking user input
+      short int convertedValue = inputValue;
 
-    // printing the number and the equivalent printable character
+      // checking user input-------------------------------------------
 
+      // check for floating numbers-----
+      if(std::floor(inputValue) != inputValue) {
+            std::cout << "Invalid: a floating point number!" << std::endl;
+            return 0;
+      }
+
+      // check for character/s or zero value-----
+      if (inputValue == 0) {
+            std::cout << "Invalid character/s or zero value!" << std::endl;
+            return 0;
+      }
+
+      // check on convertedValue after passing float numbers and other values except int--
+      if(convertedValue < 32 || convertedValue > 126) {
+            std::cout << "Invalid: number is out of the range!" << std::endl;
+            return 0;
+      }
+
+
+      // printing the number and the equivalent printable character-------
+      std::cout << "The character for " << convertedValue << " is " << static_cast<char>(convertedValue) << std::endl;
+
+
+      return 0;
 }
