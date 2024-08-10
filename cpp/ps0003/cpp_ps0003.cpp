@@ -1,22 +1,9 @@
-/* help your brother check if the number is even or odd
-    - if the number is even, print "Number is even"
-    - if the number is odd, print "Number is odd"
-    
-    - ex:
-      => 909
-      <= Number is odd
-
-    - another ex:
-      => 20000
-      <= Number is odd
-*/
-
 #include <iostream>
 #include <string>
 
 
 int main() {
-  // variable to get the number from the user---
+  // variable to get the number from the user--- 2/2
   int number {};
 
 
@@ -24,7 +11,7 @@ int main() {
   std::cin >> number;
 
   // if statement--------
-  // check if the number is even or odd and print the message---
+  // check if the number is even or odd and print the message--- 3/3
   
   // if (number % 2 == 0) {
   //   std::cout << "Number is even" << std::endl;
@@ -36,4 +23,7 @@ int main() {
   // ternary condition-----
   std::string result = (number % 2 == 0) ? "Number is even" : "Number is odd";
   std::cout << result << std::endl;
+
+  return 0;
 }
+// great work 😎 9/10 ⭐
