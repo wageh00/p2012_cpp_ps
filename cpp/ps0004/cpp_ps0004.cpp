@@ -36,4 +36,4 @@ int main()
 
       return 0;
 }
-// great work 😎 
+// great work 😎 8.5/10 ⭐
