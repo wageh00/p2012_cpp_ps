@@ -1,27 +1,24 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <iostream>
 using namespace std;
 int main()
 {
-cout<<"please enter aNumber1?"<<endl;
-int MyNumber1;
-cin>>MyNumber;
+  // prompting user for 3 numbers to add 1/2
+  cout<<"please enter aNumber1?"<<endl;
+  short MyNumber1;
+  cin>>MyNumber;
+  
+  cout<<"please enter aNumber2?"<<endl;
+  short MyNumber2;
+  cin>>MyNumber2;
+  
+  cout<<"please enter aNumber3?"<<endl;
+  short MyNumber3;
+  cin>>MyNumber3;
 
-cout<<"please enter aNumber2?"<<endl;
-int MyNumber2;
-cin>>MyNumber2;
+  // calculating & outputting the result 2/3
+  short myresult=MyNumber1+MyNumber2+MyNumber3;
+  cout<<myresult;
 
-cout<<"please enter aNumber3?"<<endl;
-int MyNumber3;
-cin>>MyNumber3;
-
-cout<<result;
-int myresult=MyNumber1+MyNumber2+MyNumber3;
+  return 0;
 }
+// good work 👍 6/10
