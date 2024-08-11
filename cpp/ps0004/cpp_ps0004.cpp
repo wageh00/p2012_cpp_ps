@@ -16,13 +16,13 @@ int main()
       // check for floating numbers-----
       if(std::floor(inputValue) != inputValue) {
             std::cout << "Invalid: a floating point number!" << std::endl;
-            return 0;
+            return 2;
       }
 
       // check for character/s or zero value-----
       if (inputValue == 0) {
             std::cout << "Invalid character/s or zero value!" << std::endl;
-            return 0;
+            return 1;
       }
       
       // check on convertedValue after passing float numbers and other values except int--
