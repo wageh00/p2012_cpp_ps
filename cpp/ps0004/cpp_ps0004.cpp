@@ -11,18 +11,18 @@ int main()
 
       short int convertedValue = inputValue;
 
-      // checking user input------------------------------------------- 3/4      
+      // checking user input------------------------------------------- 4/4      
+
+      // check for floating numbers-----
+      if(std::floor(inputValue) != inputValue) {
+            std::cout << "Invalid: a floating point number!" << std::endl;
+            return 0;
+      }
 
       // check for character/s or zero value-----
       if (inputValue == 0) {
             std::cout << "Invalid character/s or zero value!" << std::endl;
-            return 1;
-      }
-
-      // check for floating numbers-----
-      if(convertedValue != inputValue) {
-            std::cout << "Invalid: a floating point number!" << std::endl;
-            return 2;
+            return 0;
       }
       
       // check on convertedValue after passing float numbers and other values except int--
@@ -36,4 +36,4 @@ int main()
 
       return 0;
 }
-// great work 😎 8.5/10 ⭐
+// great work 😎 10/10 ⭐
