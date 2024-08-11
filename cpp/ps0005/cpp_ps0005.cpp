@@ -35,13 +35,21 @@ int main()
                   return 2;
             }
             if(!num1 && !num2) {
-                  std::cout << "Invalid character/s or zero valueInfinite number of solutions: (0 / 0) is Undefined Quantity!" << std::endl;
+                  std::cout << "Infinite number of solutions: (0 / 0) is Undefined Quantity!" << std::endl;
                   return 3;
             }
             result = num1 / num2;
             break;
 
       case '%':
+            if(num1 && !num2) {
+                  std::cout << "Math Error: cannot divide by 0." << std::endl;
+                  return 2;
+            }
+            if(!num1 && !num2) {
+                  std::cout << "Infinite number of solutions: (0 / 0) is Undefined Quantity!" << std::endl;
+                  return 3;
+            }
             if(std::int(num1) != num1 || std::int(num2) != num2) {
                   std::cout << "cannot execute modulo operation for floating point numbers." << std::endl;
                   return 4;
