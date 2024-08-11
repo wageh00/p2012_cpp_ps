@@ -14,7 +14,7 @@ int main()
       std::cout << "Enter the operator + - * / % :" << std::endl;
       std::cin >> op;
 
-      // checking user inputs and processing------------ 3/4
+      // checking user inputs and processing------------ 3.5/4
       switch (op)
       {
       case '+':
@@ -39,7 +39,7 @@ int main()
                   return 3;
             }
             result = num1 / num2;
-            break;
+            break; // 1/1
 
       case '%':
             if(num1 && !num2) {
@@ -55,12 +55,12 @@ int main()
                   return 4;
             }
             result = static_cast<int>(num1) % static_cast<int>(num2);
-            break;
+            break; // 1/1
       
       default:
             std::cout << "Invalid character for operator." << std::endl;
-            return 1;
-      }
+            return 1; // 1/1
+      } // 0.5/1 => (0+0, 0-0, 0*0) => all give error
 
       // printing the result if all data is valid 1/1
       std::cout << "(" << num1 << ") " << op << " (" << num2 << ")" << " = " << result << std::endl;
