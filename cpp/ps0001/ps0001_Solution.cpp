@@ -9,24 +9,23 @@
 
 #include<iostream>
 
-int main(){
+int main() {
 
-int number1=155;
-int number2=940;
-int number3= 940;
+    int number1;
+    int number2;
+    int number3;
+
+    
+   
+    std::cin >> number1;
+    std::cin  >> number2;
+    std::cin  >> number3;
 
 
-std::cout<<
-
-
-std::cout<< number1 <<endl;
-std::cout<< number2 <<endl;
-std::cout<< number13 <<endl;
-std::cout<<"--------"<<endl;
-std::cout<< number1+number2+number3 <<endl;
+    std::cout << "--------" <<std:: endl;
+    std::cout << number1 + number2 + number3 << std::endl;
 
 
 
     return 0;
 }
-
