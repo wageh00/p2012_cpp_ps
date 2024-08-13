@@ -1,4 +1,4 @@
-﻿#pragma once
+
 class ps0002_Solution
 {
 
@@ -46,5 +46,5 @@ class ps0002_Solution
 
 
 
-}{};
+};
 
