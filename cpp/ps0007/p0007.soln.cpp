@@ -30,10 +30,13 @@ double area(char shape, double dimensions[]) {
     }
 }
 int main() {
+    // prompting user for the shape 1.5/1.5
     char shape;
     cout << "Enter shape (C for Circle, S for Square, R for Rectangle): ";
     cin >> shape;
     double dimensions[2] = {0, 0};
+
+    // fill in the dimensions array 3/3
     switch (shape) {
         case 'C':
             cout << "Enter the radius: ";
@@ -53,9 +56,13 @@ int main() {
             cout << "Invalid shape type." << endl;
             return -1;
     }
+
+    // check the validaty of the choice for the shape 1/1
+    // printing out the area of the shape 1/1
     double result = area(shape, dimensions);
     if (result != -1) {
         cout << "The area is: " << result << endl;
     }
     return 0;
 }
+// great work 😎 9.5/10 ⭐
