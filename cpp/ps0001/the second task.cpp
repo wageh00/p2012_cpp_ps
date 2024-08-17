@@ -1,26 +1,24 @@
-
-
-
 #include <iostream>
 
 int main()
 
 {
-    int firstnumber , secondnuber , thirdnumber ;
+    // prompting users for 3 numbers to add 1/2
+    short firstnumber , secondnuber , thirdnumber ;
     
-    std::cout << "inter the first number\n";
+    std::cout << "enter the first number\n";
     std::cin >> firstnumber;
 
-    std::cout << "inter the second number\n";
+    std::cout << "enter the second number\n";
     std::cin >> secondnuber;
 
-    std::cout << "inter the thirdnumber number\n";
+    std::cout << "enter the thirdnumber number\n";
     std::cin >> thirdnumber;
-    
-    int result = firstnumber + secondnuber + thirdnumber;
+
+    // outputting the result of the summation process 3/3
+    short result = firstnumber + secondnuber + thirdnumber;
     std::cout << result;
 
     return 0;
 }
-
-
+// great work 😎 8/10 ⭐
