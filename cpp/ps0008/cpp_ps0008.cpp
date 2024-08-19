@@ -12,7 +12,7 @@ enum Case {UPPER = 0, LOWER};
 
 int main(void)
 {
-    // prompting user for valid ciphertext and key 2/3
+    // prompting user for valid ciphertext and key 3/3
     string skey, msg;
     int key;
 
@@ -34,7 +34,7 @@ int main(void)
     return 0;
 }
 
-// Decrypting process 2/3
+// Decrypting process 3/3
 void decrypt(string msg, int key)
 {
     /* implement your function and consider that:
@@ -90,4 +90,4 @@ bool isAlphapet(char c)
     return (c >= 'a' &&  c <= 'z') || (c >= 'A' &&  c <= 'Z');
 } // no need to reinvent the wheel
 
-// great work 😎 8/10 ⭐
+// great work 😎 10/10 ⭐
