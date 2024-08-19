@@ -26,27 +26,42 @@ void area(string shape, double dimension[])
   {
     cout << "Invaild Input";
   }
-} 
+}
 int main()
 {
-  string shape = ("rectangle (1) , circle (2), square (3)\n");
+  // prompting user for the shape 1.5/1.5
+  cout << "rectangle (1) , circle (2), square (3)\n";
+  int shape;
   cin >> shape;
   double dimension[2];
-  if(shape == "square")
+
+  
+  // check the validaty of the choice for the shape 0/1
+  // fill in the dimensions array 1.5/3
+  if(shape == 3)
   {
-    cout <<"Please Enter dimension\n";
-    cin >> dimension[0];
+    do {
+      cout <<"Please Enter positive side length\n";
+      cin >> dimension[0];
+    } while (dimension[0] <= 0);
   }
-  else if(shape == "circle\n")
+  else if(shape == 2)
   {
-    cout << "Please Enter Radius\n";
-    cin >> dimension[0] ;
+    do {
+      cout <<"Please Enter positive radius\n";
+      cin >> dimension[0];
+    } while (dimension[0] <= 0);
   }
-  else if(shape == "rectangle")
+  else if(shape == 1)
   {
-    cout << "Please Enter Length And Width\n " ;
-    cin >> dimension[0]>>dimension[1];
+    do {
+      cout << "Please Enter Length And Width\n" ;
+      cin >> dimension[0]>>dimension[1];
+    } while (dimension[0] <= 0 || dimension[1] <= 0);
   }
+  
+  // printing out the area of the shape 1/1
   area(shape,dimension);
   return 0;
 }
+// good work 👍 5.5/10
