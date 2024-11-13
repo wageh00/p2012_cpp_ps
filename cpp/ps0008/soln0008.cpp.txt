@@ -1,0 +1,51 @@
+#include <iostream>
+#include <limits>
+#include <cctype>
+#include <string>
+using namespace std;
+
+void decrypt(string msg, int key);
+
+int main(void)
+{
+    string ciphertext;
+    int key;
+
+    cout << "Enter the ciphertext: ";
+    getline(cin, ciphertext);
+
+    for (char ch : ciphertext) {
+        if (!isalpha(ch) && !isspace(ch)) {   
+            cout << "Error: The ciphertext should contain letters only." << endl;
+            return 1;
+        }
+    }
+
+    cout << "Enter the key: ";
+    while (!(cin >> key)) {
+        cout << "Error: Please enter a valid integer key." << endl;
+        cin.clear(); 
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');  
+        cout << "Enter the key again: ";
+    }
+
+    decrypt(ciphertext, key);
+
+    return 0;
+}
+
+void decrypt(string msg, int key)
+{
+    key = key % 26;
+    if (key < 0) key += 26;
+
+    for (int i = 0; msg[i] != '\0'; i++) {
+        char ch = msg[i];
+        if (isalpha(ch)) {
+            char base = isupper(ch) ? 'A' : 'a';
+            msg[i] = (ch - base - key + 26) % 26 + base;
+        }
+    }
+
+    cout << "Plaintext: " << msg << endl;
+}
